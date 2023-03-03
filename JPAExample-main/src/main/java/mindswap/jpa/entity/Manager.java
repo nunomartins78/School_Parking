@@ -1,7 +1,5 @@
 package mindswap.jpa.entity;
 
-
-
 import mindswap.jpa.entity.Resources.TeacherEntity;
 
 import javax.persistence.EntityManager;
