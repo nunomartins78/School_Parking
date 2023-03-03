@@ -4,9 +4,10 @@
              http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd"
              version="2.1">
     <persistence-unit name="school_parking">
-        <class>mindswap.jpa.entity.AddressEntity</class>
-        <class>mindswap.jpa.entity.EmployeeEntity</class>
-        <class>mindswap.jpa.entity.CompanyEntity</class>
+        <class>mindswap.jpa.entity.Resources.ParkingSpace</class>
+        <class>mindswap.jpa.entity.Resources.SchoolEntity</class>
+        <class>mindswap.jpa.entity.Resources.TeacherEntity</class>
+        <class>mindswap.jpa.entity.Resources.VehicleEntity</class>
         <properties>
             <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/ParkingSpaces"/>
