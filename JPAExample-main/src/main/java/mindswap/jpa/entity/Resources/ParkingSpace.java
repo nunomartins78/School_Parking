@@ -7,11 +7,11 @@ import java.util.List;
 public class ParkingSpace {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id",nullable = false, unique = true)
+    @Column(name = "id",nullable = false)
     private int id;
     @Column(name = "Zone", nullable = false)
     private String zone;
-    @Column(name = "Parking_Space", nullable = false, unique = true)
+    @Column(name = "Parking_Space", nullable = false)
     private int spot;
 
     public ParkingSpace(String zone, int spot) {

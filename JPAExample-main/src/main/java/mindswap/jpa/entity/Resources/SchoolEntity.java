@@ -5,7 +5,7 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class SchoolEntity {
-    @Id
+/*    @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, unique = true)
 
@@ -21,6 +21,6 @@ public class SchoolEntity {
 
     public List<ParkingSpace> getSpot(){
         return spot;
-    }
+    }*/
 
 }

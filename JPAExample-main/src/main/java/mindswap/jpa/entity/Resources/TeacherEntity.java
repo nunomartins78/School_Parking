@@ -14,18 +14,15 @@ public class TeacherEntity extends Person {
 
     @OneToOne(targetEntity = ParkingSpace.class)
     private ParkingSpace parkingSpace;
+    @OneToOne(targetEntity = VehicleEntity.class)
+    private VehicleEntity vehicle;
 
-    private String vehicle;
-
-     public TeacherEntity(String name, int age, String vehicle, ParkingSpace parkingSpace){
+     public TeacherEntity(String name, int age, VehicleEntity vehicle, ParkingSpace parkingSpace){
         super(name, age);
         this.vehicle = vehicle;
         this.parkingSpace = parkingSpace;
     }
 
-    public String getVehicle() {
-        return vehicle;
-    }
 
     public ParkingSpace getParkingSpace() {
         return parkingSpace;
@@ -36,8 +33,8 @@ public class TeacherEntity extends Person {
                 "id = " + getId() +
                 ", name = " + getName() +
                 ", age = " + getAge() +
-                ", vehicle = " + getVehicle() +
-                ", parking space = " + getParkingSpace() +
+                ", vehicle = " + VehicleEntity.getVehicle() +
+                ", parking space = " + getParkingSpace().toString() +
                 '}');
     }
 }

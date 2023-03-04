@@ -12,6 +12,7 @@ public class VehicleEntity {
     private String licencePlate;
 
     @Column(name = "Vehicle", nullable = false)
+    static
     String vehicle;
 
     public VehicleEntity(String licencePlate, String vehicle){
@@ -27,7 +28,7 @@ public class VehicleEntity {
         return licencePlate;
     }
 
-    public String getVehicle() {
+    public static String getVehicle() {
         return vehicle;
     }
 
