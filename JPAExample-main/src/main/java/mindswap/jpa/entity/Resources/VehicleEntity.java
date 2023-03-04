@@ -10,15 +10,16 @@ public class VehicleEntity {
     private int id;
     @Column(name = "Licence_Plate", nullable = false)
     private String licencePlate;
-    enum VehicleType{
-        CAR,
-        MOTORCYCLE
-    }
-    @Column(name = "Vehicle", nullable = false)
-    VehicleType vehicle;
 
-    public VehicleEntity(String licencePlate, VehicleType vehicle){
+    @Column(name = "Vehicle", nullable = false)
+    String vehicle;
+
+    public VehicleEntity(String licencePlate, String vehicle){
         this.licencePlate = licencePlate;
+        this.vehicle = vehicle;
+    }
+
+    public VehicleEntity(String vehicle) {
         this.vehicle = vehicle;
     }
 
@@ -26,11 +27,11 @@ public class VehicleEntity {
         return id;
     }
 
-    public String getLicencePlate() {
+    public java.lang.String getLicencePlate() {
         return licencePlate;
     }
 
-    public VehicleType getVehicle() {
+    public String getVehicle() {
         return vehicle;
     }
 
@@ -38,7 +39,7 @@ public class VehicleEntity {
         this.licencePlate = licencePlate;
     }
 
-    public void setVehicle(VehicleType vehicle) {
+    public void setVehicle(String vehicle) {
         this.vehicle = vehicle;
     }
 }

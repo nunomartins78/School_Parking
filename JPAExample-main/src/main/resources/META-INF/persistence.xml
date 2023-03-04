@@ -9,7 +9,7 @@
         <class>mindswap.jpa.entity.Resources.TeacherEntity</class>
         <class>mindswap.jpa.entity.Resources.VehicleEntity</class>
         <properties>
-            <property name="hibernate.connection.driver_class" value="com.mysql.jdbc.Driver"/>
+            <property name="hibernate.connection.driver_class" value="com.mysql.cj.jdbc.Driver"/>
             <property name="hibernate.connection.url" value="jdbc:mysql://localhost:3306/ParkingSpaces"/>
             <property name="hibernate.connection.user" value="root"/>
             <property name="hibernate.connection.password" value="teste"/>

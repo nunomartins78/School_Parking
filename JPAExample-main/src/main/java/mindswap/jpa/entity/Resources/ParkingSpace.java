@@ -12,9 +12,9 @@ public class ParkingSpace {
     @Column(name = "Zone", nullable = false)
     private String zone;
     @Column(name = "Parking_Space", nullable = false, unique = true)
-    private List spot;
+    private int spot;
 
-    public ParkingSpace(String zone, List spot) {
+    public ParkingSpace(String zone, int spot) {
         this.zone = zone;
         this.spot = spot;
     }
