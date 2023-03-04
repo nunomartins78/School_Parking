@@ -5,7 +5,7 @@ import javax.persistence.*;
 @MappedSuperclass
 public class Person {
     @Id
-    @GeneratedValue (strategy = GenerationType.SEQUENCE)
+    @GeneratedValue (strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false)
     private int id;
     @Column(name = "Name", nullable = false)

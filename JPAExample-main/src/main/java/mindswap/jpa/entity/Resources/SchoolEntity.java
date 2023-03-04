@@ -6,7 +6,7 @@ import java.util.List;
 
 public class SchoolEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, unique = true)
 
     @OneToMany(targetEntity = ParkingSpace.class)

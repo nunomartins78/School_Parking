@@ -5,7 +5,7 @@ import javax.persistence.*;
 @Entity
 public class VehicleEntity {
     @Id
-    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", nullable = false, unique = true)
     private int id;
     @Column(name = "Licence_Plate", nullable = false)
@@ -16,10 +16,6 @@ public class VehicleEntity {
 
     public VehicleEntity(String licencePlate, String vehicle){
         this.licencePlate = licencePlate;
-        this.vehicle = vehicle;
-    }
-
-    public VehicleEntity(String vehicle) {
         this.vehicle = vehicle;
     }
 

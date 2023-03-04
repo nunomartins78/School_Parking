@@ -9,8 +9,8 @@ import java.util.List;
 @Entity
 public class TeacherEntity extends Person {
 
-    @OneToMany(targetEntity = VehicleEntity.class)
-    private List<VehicleEntity> vehicleEntity = new ArrayList<>();
+/*    @OneToMany(targetEntity = VehicleEntity.class)
+    private List<VehicleEntity> vehicleEntity = new ArrayList<>();*/
 
     @OneToOne(targetEntity = ParkingSpace.class)
     private ParkingSpace parkingSpace;
